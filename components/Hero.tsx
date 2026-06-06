@@ -8,7 +8,7 @@ export default function Hero() {
         <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
           Storage, Cleaning, and Site Services
           <br />
-          <span className="text-[#e8813a]">for LA, OC & the High Desert</span>
+          <span className="text-[#e8813a]">for Southern California</span>
         </h1>
         <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
           PJ Site Services helps property owners, contractors, fleet operators,
