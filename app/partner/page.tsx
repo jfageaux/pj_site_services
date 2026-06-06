@@ -50,14 +50,14 @@ const SERVICE_LINES = [
 ];
 
 const MVP_STEPS = [
-  "Pick one simple High Desert service to validate first.",
-  "Build a basic landing page.",
-  "Contact boat/RV owners, contractors, property managers, warehouses, fleet operators, and commercial sites.",
+  "Pick one simple service to validate first — fleet washing or pressure washing near Long Beach is a strong candidate.",
+  "Build a basic landing page targeting LA/OC customers.",
+  "Contact trucking companies, logistics operators, port-adjacent businesses, property managers, and commercial sites in the Long Beach / LA area.",
   "Try to get the first paying customer.",
-  "Keep the first version simple with no backend or complicated software.",
+  "Keep the first version simple — no backend, no complicated software.",
   "Track every lead manually.",
-  "Learn what people actually want.",
-  "Add recurring services once demand is clear.",
+  "Learn what customers in the area actually need and are willing to pay for.",
+  "Add recurring services and expand service runs from the High Desert once demand is clear.",
 ];
 
 const FIRST_CUSTOMERS = [
@@ -72,13 +72,14 @@ const FIRST_CUSTOMERS = [
 ];
 
 const WHY_IT_WORKS = [
-  "High Desert land can be cheaper than coastal Southern California.",
-  "Many customers need storage, cleaning, washing, and maintenance but do not want to coordinate multiple vendors.",
-  "Boring services can create recurring revenue.",
-  "The company can start very small.",
-  "The brand can expand without needing a rebrand.",
-  "Most small service businesses have weak websites, weak follow-up, and weak systems.",
-  "AI and automation can help later with quoting, scheduling, customer follow-up, reminders, routing, and operations.",
+  "High Desert land is significantly cheaper than coastal Southern California — lower storage overhead means more competitive pricing.",
+  "LA and OC have high demand for fleet washing, commercial cleaning, pressure washing, and outdoor storage, with customers willing to pay for reliable service.",
+  "Port of Long Beach and nearby industrial zones are a natural customer base — trucking companies, logistics operators, and fleet managers all need exactly these services.",
+  "Many customers don't want to coordinate multiple vendors. One company handling storage, washing, and site maintenance is a real value proposition.",
+  "Boring services create recurring revenue. A fleet wash route or a monthly cleaning contract is steady, predictable income.",
+  "Most small service businesses have weak websites, weak follow-up, and weak systems — easy to stand out.",
+  "AI routing tools can plan efficient service runs from the High Desert into LA/OC, reducing fuel and drive time costs.",
+  "Remote security monitoring (cameras, sensors, smart alerts) replaces expensive on-site guards — making storage yard security affordable to operate at scale.",
 ];
 
 const NEXT_STEPS = [
@@ -128,9 +129,9 @@ export default function PartnerPage() {
               PJ Site Services — Partner Concept
             </h1>
             <p className="text-gray-300 text-lg max-w-2xl">
-              This page explains the full business concept, service expansion
-              plan, early MVP strategy, and why the company name should stay
-              broad instead of being only storage-focused.
+              This page explains the full business concept: High Desert operations,
+              LA/OC market focus, the tech stack that makes it work, and why the
+              company name should stay broad instead of being only storage-focused.
             </p>
           </div>
         </section>
@@ -183,18 +184,23 @@ export default function PartnerPage() {
             <h2 className="text-2xl font-bold text-[#1c2b3a] mb-4">The Core Idea</h2>
             <div className="bg-white border-l-4 border-[#e8813a] rounded p-6 shadow-sm">
               <p className="text-gray-700 leading-relaxed mb-4">
-                PJ Site Services starts as a simple High Desert site services
-                company. The first wedge can be outdoor storage, boat/RV storage,
-                container storage, pressure washing, or commercial cleaning. Over
-                time, the company can add recurring service lines that use the
-                same local customer base, the same operations mindset, and the
-                same simple sales process.
+                PJ Site Services operates from the High Desert but targets customers
+                in LA and Orange County — especially port operators, logistics companies,
+                fleet managers, and commercial property owners near Long Beach. The
+                High Desert base keeps land and overhead costs low. The LA/OC market
+                has strong demand and customers who will pay for reliable service.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                The geographic gap between operations and customers gets bridged by
+                technology: AI-assisted routing to plan efficient service runs,
+                remote security monitoring to manage storage yards without on-site
+                guards, and smart scheduling to maximize revenue per trip.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 The goal is not to build a complicated tech company. The goal is
                 to build a boring local services company with better systems,
-                better follow-up, better customer communication, and eventually
-                better automation.
+                better follow-up, better customer communication, and better
+                automation than the competition.
               </p>
             </div>
           </section>
@@ -273,6 +279,56 @@ export default function PartnerPage() {
                 </li>
               ))}
             </ul>
+          </section>
+
+          {/* Section 6b: Tech & AI Advantage */}
+          <section>
+            <h2 className="text-2xl font-bold text-[#1c2b3a] mb-2">
+              How Technology Closes the Distance
+            </h2>
+            <p className="text-gray-600 text-sm mb-6">
+              Operating from the High Desert while serving LA/OC only works if transportation
+              and security costs are kept under control. Here's how tech makes that viable.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+                <p className="font-bold text-[#1c2b3a] mb-2">AI Route Optimization</p>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Route planning tools (Routific, OptimoRoute, Google Routes API) can
+                  cluster jobs by area and day so each drive from the High Desert into
+                  LA/OC covers multiple stops. A well-planned route can turn a long
+                  drive into a profitable service day instead of a breakeven one.
+                </p>
+              </div>
+              <div className="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+                <p className="font-bold text-[#1c2b3a] mb-2">Remote Security Monitoring</p>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  IP cameras, motion sensors, and smart alert systems let you monitor
+                  a storage yard remotely without paying for on-site security guards.
+                  Modern camera systems with AI-based motion detection can flag real
+                  threats and ignore false alarms, making remote management practical
+                  and affordable.
+                </p>
+              </div>
+              <div className="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+                <p className="font-bold text-[#1c2b3a] mb-2">Smart Scheduling</p>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Scheduling software (Jobber, HouseCall Pro) automates booking,
+                  reminders, and follow-up. Less time on admin means more time on
+                  jobs. Recurring service contracts get auto-scheduled so nothing
+                  falls through the cracks.
+                </p>
+              </div>
+              <div className="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+                <p className="font-bold text-[#1c2b3a] mb-2">Automated Customer Follow-Up</p>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  AI tools can handle quote follow-ups, appointment confirmations,
+                  and review requests automatically. The company can operate with a
+                  small team and still maintain responsive, professional communication
+                  with every customer.
+                </p>
+              </div>
+            </div>
           </section>
 
           {/* Section 7 */}

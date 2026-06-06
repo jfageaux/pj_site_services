@@ -76,9 +76,9 @@ const SERVICES = [
 
 const BENEFITS = [
   {
-    title: "High Desert Focus",
+    title: "LA, OC & High Desert",
     description:
-      "Local service for High Desert properties, storage yards, contractors, and commercial sites.",
+      "We service customers across LA and Orange County, with operations based in the High Desert — keeping costs lower than coastal-only providers.",
   },
   {
     title: "Multiple Site Services",
@@ -108,7 +108,21 @@ const CUSTOMERS = [
   "Homeowners with outdoor storage needs",
 ];
 
-const AREAS = [
+const LA_OC_AREAS = [
+  "Long Beach",
+  "Los Angeles",
+  "Carson",
+  "Compton",
+  "Torrance",
+  "Gardena",
+  "Hawthorne",
+  "El Segundo",
+  "Anaheim",
+  "Santa Ana",
+  "Orange County",
+];
+
+const HIGH_DESERT_AREAS = [
   "Hesperia",
   "Victorville",
   "Adelanto",
@@ -116,7 +130,6 @@ const AREAS = [
   "Barstow",
   "Oak Hills",
   "Phelan",
-  "Surrounding High Desert areas",
 ];
 
 export default function Home() {
@@ -178,25 +191,54 @@ export default function Home() {
 
         {/* Service Area */}
         <section id="service-area" className="py-16 px-4 bg-[#1c2b3a] text-white">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Serving the High Desert</h2>
-            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              PJ Site Services is starting in the High Desert with a focus on
-              practical outdoor storage, commercial cleaning, pressure washing,
-              fleet washing, landscaping, irrigation, and site maintenance.
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold mb-3 text-center">Service Area</h2>
+            <p className="text-gray-300 mb-10 max-w-2xl mx-auto text-center">
+              We serve customers across LA and Orange County — including port, logistics,
+              and commercial sites near Long Beach. Operations are based in the High
+              Desert, which keeps our overhead low and our pricing competitive.
             </p>
-            <div className="flex flex-wrap gap-3 justify-center mb-6">
-              {AREAS.map((area) => (
-                <span
-                  key={area}
-                  className="bg-[#253d52] border border-gray-600 rounded px-4 py-2 text-sm"
-                >
-                  {area}
-                </span>
-              ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <p className="text-[#e8813a] font-semibold text-sm uppercase tracking-widest mb-4">
+                  Primary Service Area — LA & OC
+                </p>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {LA_OC_AREAS.map((area) => (
+                    <span
+                      key={area}
+                      className="bg-[#e8813a] bg-opacity-20 border border-[#e8813a] border-opacity-40 rounded px-3 py-1.5 text-sm"
+                    >
+                      {area}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-xs text-gray-500 mt-2">
+                  Including Port of Long Beach and surrounding industrial/commercial areas.
+                </p>
+              </div>
+              <div>
+                <p className="text-gray-400 font-semibold text-sm uppercase tracking-widest mb-4">
+                  Operations Base — High Desert
+                </p>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {HIGH_DESERT_AREAS.map((area) => (
+                    <span
+                      key={area}
+                      className="bg-[#253d52] border border-gray-600 rounded px-3 py-1.5 text-sm"
+                    >
+                      {area}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-xs text-gray-500 mt-2">
+                  Storage, equipment, and operations hub. Lower land costs mean better
+                  rates for customers.
+                </p>
+              </div>
             </div>
-            <p className="text-xs text-gray-500">
-              Availability may vary by service type and job size.
+            <p className="text-xs text-gray-600 mt-8 text-center">
+              Availability may vary by service type and job size. Contact us to confirm coverage.
             </p>
           </div>
         </section>

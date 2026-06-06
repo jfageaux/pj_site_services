@@ -7,7 +7,7 @@ export default function Footer() {
             <p className="text-white font-bold text-lg mb-2">PJ Site Services</p>
             <p className="text-sm max-w-xs leading-relaxed">
               Storage, cleaning, pressure washing, fleet washing, landscaping,
-              irrigation, and site support for the High Desert.
+              irrigation, and site support for LA, OC & the High Desert.
             </p>
           </div>
           <nav className="flex flex-col gap-2 text-sm">
@@ -29,7 +29,7 @@ export default function Footer() {
           </nav>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-6 text-xs text-gray-600">
-          © {new Date().getFullYear()} PJ Site Services. High Desert, CA.
+          © {new Date().getFullYear()} PJ Site Services. Southern California.
         </div>
       </div>
     </footer>
